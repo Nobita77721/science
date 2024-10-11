@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Science Discoveries</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #001f3f; 
+            color: #ffffff;
+            margin: 0;
+            transition: background-color 0.3s;
+        }
+        
+        }
+        nav {
+            background-color:#39CCCC;; 
+            padding: 15px;
+            text-align: center;
+        }
+        nav a {
+            color: #ffffff;
+            margin: 0 15px;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: red;
+        }
+        marquee {
+            background-color: #39CCCC; /* Cyan */
+            padding: 10px;
+            font-size: 24px;
+        }
+        .container {
+            padding: 20px;
+            border-radius: 100px  0 100px 0;
+            text-align: center;
+            length:100px;
+            width:500;
+        }
+        
+           .featured-images img { 
+            margin: 10px;
+            width: 80%; /* Make images larger */
+            max-width: 600px; /* Set max width for larger screens */
+            border-radius: 10px;
+            transition: transform 0.2s;
+        
+}
+        .scientist-list,
+        .category-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 20px 0;
+        }
+        
+        .scientist-list a,
+        .category-list a {
+            margin: 10px;
+            width: 150px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .featured-images img:hover,
+        .scientist-list a:hover,
+        .category-list a:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+        footer {
+            background-color: #39CCCC;; 
+            padding: 10px;
+            text-align: center;
+        }
+  .featured-images img { 
+            margin: 10px;
+            width: 80%; /* Make images larger */
+            max-width: 600px; /* Set max width for larger screens */
+            border-radius: 10px;
+            transition: transform 0.2s;
+        
+}
+        .hidden {
+            display: none;
+
+            
+        }
+.nav{
+background-color: dark green;
+length:20px;
+ padding: 10px;
+            font-size: 24px;
+
+}
+.hidden a{
+color:pink;
+}
+    </style>
+</head>
+<body>
+<div class="nav">
+<header>
+    <nav>
+        <a href="#" onclick="showPage('home')">Home</a>
+        <a href="#" onclick="showPage('about')">About</a>
+        <a href="#" onclick="showPage('categories')">Categories</a>
+        <a href="#" onclick="showPage('scientists')">Scientists</a>
+    </nav>
+</header>
+</div>
+
+<marquee>Welcome to Science World!</marquee>
+
+<div class="container">
+    <div id="home">
+        <h2>Featured Discoveries</h2>
+        <div class="featured-images">
+            <img src="C:\Users\lenovo\Pictures\s1.jfif" alt="Discovery 1">
+        </div>
+    </div>
+
+    <div id="about" class="hidden">
+        <h2>About Science Discoveries</h2>
+        <p>This website is dedicated to showcasing significant discoveries and achievements in various fields of science. Explore the categories to learn about different disciplines and the scientists who made remarkable contributions.</p>
+    </div>
+
+    <div id="categories" class="hidden">
+        <h2>Science Categories</h2>
+        <div class="category-list">
+            <a href="#" onclick="showPage('physics')" class="category">Physics</a>
+            <a href="#" onclick="showPage('chemistry')" class="category">Chemistry</a>
+            <a href="#" onclick="showPage('biology')" class="category">Biology</a>
+            <a href="#" onclick="showPage('astronomy')" class="category">Astronomy</a>
+            <a href="#" onclick="showPage('geology')" class="category">Geology</a>
+            <a href="#" onclick="showPage('mathematics')" class="category">Mathematics</a>
+            <a href="#" onclick="showPage('environmental')" class="category">Environmental Science</a>
+        </div>
+    </div>
+
+    <div id="scientists" class="hidden">
+        <h2>Famous Scientists</h2>
+        <div class="scientist-list">
+            <a href="#" onclick="showPage('newton')" class="scientist">Isaac Newton</a>
+            <a href="#" onclick="showPage('einstein')" class="scientist">Albert Einstein</a>
+            <a href="#" onclick="showPage('curie')" class="scientist">Marie Curie</a>
+            <a href="#" onclick="showPage('darwin')" class="scientist">Charles Darwin</a>
+            <a href="#" onclick="showPage('faraday')" class="scientist">Michael Faraday</a>
+            <a href="#" onclick="showPage('tesla')" class="scientist">Nikola Tesla</a>
+            <a href="#" onclick="showPage('turing')" class="scientist">Alan Turing</a>
+            <a href="#" onclick="showPage('heisenberg')" class="scientist">Werner Heisenberg</a>
+            <a href="#" onclick="showPage('hawking')" class="scientist">Stephen Hawking</a>
+            <a href="#" onclick="showPage('noether')" class="scientist">Emmy Noether</a>
+        </div>
+    </div>
+
+    
+    <div id="newton" class="hidden">
+        <h2>Isaac Newton</h2>
+        <img src="C:\Users\lenovo\Pictures\iccac.jfif" alt="Isaac Newton" style="width:200px;">
+        <p>Born: January 4, 1643<br>
+           Died: March 31, 1727<br>
+           Achievements: Laws of motion, theory of gravity, calculus.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="einstein" class="hidden">
+        <h2>Albert Einstein</h2>
+        <img src="C:\Users\lenovo\Pictures\albert.jfif" alt="Albert Einstein" style="width:200px;">
+        <p>Born: March 14, 1879<br>
+           Died: April 18, 1955<br>
+           Achievements: Theory of relativity, photoelectric effect.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="curie" class="hidden">
+        <h2>Marie Curie</h2>
+        <img src="C:\Users\lenovo\Pictures\marie.jfif" alt="Marie Curie" style="width:200px;">
+        <p>Born: November 7, 1867<br>
+           Died: July 4, 1934<br>
+           Achievements: Radioactivity, Nobel Prizes in Physics and Chemistry.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="darwin" class="hidden">
+        <h2>Charles Darwin</h2>
+        <img src="C:\Users\lenovo\Pictures\charles.jfif" alt="Charles Darwin" style="width:200px;">
+        <p>Born: February 12, 1809<br>
+           Died: April 19, 1882<br>
+           Achievements: Theory of evolution by natural selection.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="faraday" class="hidden">
+        <h2>Michael Faraday</h2>
+        <img src="C:\Users\lenovo\Pictures\faraday.jfif" alt="Michael Faraday" style="width:200px;">
+        <p>Born: September 22, 1791<br>
+           Died: August 25, 1867<br>
+           Achievements: Electromagnetism, electrochemistry.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="tesla" class="hidden">
+        <h2>Nikola Tesla</h2>
+        <img src="C:\Users\lenovo\Pictures\tesla.jfif" alt="Nikola Tesla" style="width:200px;">
+        <p>Born: July 10, 1856<br>
+           Died: January 7, 1943<br>
+           Achievements: AC electricity, Tesla coil.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="turing" class="hidden">
+        <h2>Alan Turing</h2>
+        <img src="C:\Users\lenovo\Pictures\alan.jfif" alt="Alan Turing" style="width:200px;">
+        <p>Born: June 23, 1912<br>
+           Died: June 7, 1954<br>
+           Achievements: Father of computer science, Turing machine.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="heisenberg" class="hidden">
+        <h2>Werner Heisenberg</h2>
+        <img src="C:\Users\lenovo\Pictures\w.jfif" alt="Werner Heisenberg" style="width:200px;">
+        <p>Born: December 5, 1901<br>
+           Died: February 1, 1976<br>
+           Achievements: Quantum mechanics, Uncertainty principle.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="hawking" class="hidden">
+        <h2>Stephen Hawking</h2>
+        <img src="C:\Users\lenovo\Pictures\s.jfif" alt="Stephen Hawking" style="width:200px;">
+        <p>Born: January 8, 1942<br>
+           Died: March 14, 2018<br>
+           Achievements: Black holes, Hawking radiation.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="noether" class="hidden">
+        <h2>Emmy Noether</h2>
+        <img src="C:\Users\lenovo\Pictures\e.jfif" alt="Emmy Noether" style="width:200px;">
+        <p>Born: March 23, 1882<br>
+           Died: April 14, 1935<br>
+           Achievements: Noether's theorem, abstract algebra.</p>
+        <button onclick="showPage('scientists')">Back</button>
+    </div>
+
+    <div id="physics" class="hidden">
+        <h2>Physics Overview</h2>
+        <p>Physics is the study of matter, energy, and the fundamental forces of nature.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="chemistry" class="hidden">
+        <h2>Chemistry Overview</h2>
+        <p>Chemistry is the study of substances, their properties, and how they interact with one another.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="biology" class="hidden">
+        <h2>Biology Overview</h2>
+        <p>Biology is the study of living organisms, their structure, function, growth, and evolution.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="astronomy" class="hidden">
+        <h2>Astronomy Overview</h2>
+        <p>Astronomy is the study of celestial objects, space, and the universe as a whole.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="geology" class="hidden">
+        <h2>Geology Overview</h2>
+        <p>Geology is the study of the Earth, its processes, materials, and history.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="mathematics" class="hidden">
+        <h2>Mathematics Overview</h2>
+        <p>Mathematics is the study of numbers, quantities, shapes, and patterns.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+
+    <div id="environmental" class="hidden">
+        <h2>Environmental Science Overview</h2>
+        <p>Environmental Science is the study of the interactions between the physical, chemical, and biological components of the environment.</p>
+        <button onclick="showPage('categories')">Back</button>
+    </div>
+</div>
+
+<footer>
+    <p>&copy; 2024 Science Discoveries</p>
+</footer>
+
+<script>
+    function showPage(page) {
+        const sections = ['home', 'about', 'categories', 'scientists', 'newton', 'einstein', 'curie', 'darwin', 'faraday', 'tesla', 'turing', 'heisenberg', 'hawking', 'noether', 'physics', 'chemistry', 'biology', 'astronomy', 'geology', 'mathematics', 'environmental'];
+        sections.forEach(section => {
+            document.getElementById(section).classList.add('hidden');
+        });
+        document.getElementById(page).classList.remove('hidden');
+    }
+</script>
+
+</body>
+</html>
+
